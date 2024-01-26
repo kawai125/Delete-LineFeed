@@ -16,7 +16,9 @@ function createButton() {
   button.id="delete-linefeed-button";
   button.innerText = '改行を削除';
   button.addEventListener('click', removeLineBreaks);
-  const targetElement = document.getElementById('headlessui-tabs-tab-1');
+
+  const targetElement = document.getElementById('headlessui-tabs-tab-6');
+  //const targetElement = document.getElementById("headlessui-tabs-tab-1");
   targetElement.parentNode.insertBefore(button, targetElement.nextSibling);
 }
 
